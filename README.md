@@ -17,10 +17,9 @@ I used the King County House Sales dataset, which can be found in  `kc_house_dat
 
 After reviewing the data, I checked which data points had the highest correlation to the price. I made dummies of categorical items, removed outliers, and created a test and train set to make a baseline model with a adjusted R^2 score to .602. 
 
-![baseline.png](attachment:baseline.png)
-
+![baseline.png](https://user-images.githubusercontent.com/102811933/193312198-1a59b297-7054-4524-a67f-2895e0c15b1e.png)
 Then I took out more outliers, removed anything with p-values higher than .05, and ran it again, increasing the adjusted R^2 score to .607. 
-![model_improved.png](attachment:model_improved.png)
+![model_improved.png](https://user-images.githubusercontent.com/102811933/193312717-b3cf5ecf-52eb-41b2-9f44-c957a47f27a9.png)
 
 I further experimented with scaling, and then repeating the whole process without dummies and only with a limited number of variables. Each path had it's positives and negatives that I would like to revisit, though I was suprised that the non-dummies model performed considerably lower than the non-dummies model in consideration to ad. R^2 values. 
 
